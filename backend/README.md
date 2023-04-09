@@ -1,6 +1,6 @@
-# Sports Scores - REST API
+# Boxscores - REST API
 
-This app uses the Express framework, TypeScript, and an in-memory MongoDB server instance to house NBA, NHL, and MLB scores.
+This app uses the Express framework, TypeScript, and an in-memory MongoDB server instance to house NBA, NHL, and MLB scores for giggles.
 
 ## Start The Backend Server
 
