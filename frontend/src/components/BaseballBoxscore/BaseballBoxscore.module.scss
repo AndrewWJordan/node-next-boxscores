@@ -1,0 +1,32 @@
+.boxscore {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2rem;
+
+  .boxscore__details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    .boxscore__details__team,
+    .boxscore__details__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+    }
+
+    .boxscore__details__team {
+      width: 40%;
+      background-color: red;
+    }
+
+    .boxscore__details__info {
+      width: 20%;
+      background-color: lightgray;
+    }
+  }
+}
