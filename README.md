@@ -5,7 +5,8 @@ This full-stack web app uses the Express framework (API), TypeScript, Next.js, a
 ## To Start
 
 ```
-npm run build:start`
+nvm use
+npm run build:start
 ```
 
 ## Frontend
