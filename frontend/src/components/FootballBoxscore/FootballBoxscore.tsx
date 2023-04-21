@@ -1,6 +1,4 @@
-import styles from "./FootballBoxscore.module.scss";
-
-export default function FootballBoxscore({}) {
+export default function FootballBoxscore() {
   return (
     <div className="boxscore">
       <div className="boxscore__team boxscore__team--header">

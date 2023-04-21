@@ -1,14 +1,15 @@
 import { Oswald } from "next/font/google";
-import styles from "@/styles/Home.module.scss";
+import styles from "@/styles/Baseball.module.scss";
 import Layout from "../components/Layout";
 
 const oswald = Oswald({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Football() {
   return (
-    <Layout title="Boxscores" description="Welcome - Fresh scores daily!">
+    <Layout title="Hockey Boxscore" description="Hockey boxscore page">
       <main className={`${oswald.className} ${styles.main}`}>
-        <h1>Boxscores</h1>
+        <h1>Hockey</h1>
+        <div>Coming soonish</div>
       </main>
     </Layout>
   );

@@ -1,0 +1,19 @@
+{
+  "name": "node-next-boxscores",
+  "version": "1.0.0",
+  "description": "A node backend API to fetch sports scores and a next.js frontend to display them. Well, some of them. ",
+  "scripts": {
+    "build": "cd backend && npm install && cd ../frontend && npm run build",
+    "start": "concurrently \"cd backend && npm run start\" \"cd frontend && npm run dev\"",
+    "build:start": "npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:AndrewWJordan/node-next-boxscores"
+  },
+  "author": "Andrew Jordan",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
