@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 export interface IResponse extends mongoose.Document {
   type: string;
@@ -23,4 +23,4 @@ const ResponseSchema = new mongoose.Schema({
 });
 
 export const ResponseModel: mongoose.Model<IResponse> =
-  mongoose.model<IResponse>('scores', ResponseSchema);
+  mongoose.model<IResponse>("scores", ResponseSchema);

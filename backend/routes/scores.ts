@@ -1,12 +1,12 @@
-import express, { Request, Response } from 'express';
-import { ResponseModel } from '../models/response';
-import { urls } from '../config';
-import { fetchData } from '../utils/fetch';
-import { getToday, fiveMinutesAgo } from '../utils/date';
+import express, { Request, Response } from "express";
+import { ResponseModel } from "../models/response";
+import { urls } from "../config";
+import { fetchData } from "../utils/fetch";
+import { getToday, fiveMinutesAgo } from "../utils/date";
 
 const router = express.Router();
 
-router.get('/:league', async (req: Request, res: Response) => {
+router.get("/:league", async (req: Request, res: Response) => {
   const league = req.params.league.toLowerCase();
   const currentTimestamp = new Date();
 
@@ -26,17 +26,17 @@ router.get('/:league', async (req: Request, res: Response) => {
 
     let url: string;
     switch (league) {
-      case 'nhl':
+      case "nhl":
         url = `${urls.nhl}?date=${getToday()}`;
         break;
-      case 'mlb':
+      case "mlb":
         url = urls.mlb;
         break;
-      case 'nba':
+      case "nba":
         url = urls.nba;
         break;
       default:
-        return res.status(404).json({ error: 'Endpoint does not exist' });
+        return res.status(404).json({ error: "Endpoint does not exist" });
     }
 
     const response = await fetchData(url);

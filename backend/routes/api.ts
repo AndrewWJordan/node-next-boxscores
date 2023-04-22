@@ -1,8 +1,8 @@
-import express from 'express';
-import scoresRouter from './scores';
+import express from "express";
+import scoresRouter from "./scores";
 
 const apiRouter = express.Router();
 
-apiRouter.use('/scores', scoresRouter);
+apiRouter.use("/scores", scoresRouter);
 
 export default apiRouter;
